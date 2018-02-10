@@ -24,7 +24,7 @@ figure {
 		left: 10px;
 		z-index: 10px;
 		@include text-center;
-		color: $blue-grey;
+		color: rgba($blue-grey, 0.5);
 	}
 }
 
