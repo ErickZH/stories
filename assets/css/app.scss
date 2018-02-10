@@ -1,4 +1,5 @@
 @import "./modules/_variables.scss";
+@import "./modules/_mixins.scss";
 
 body {
 	background-color: $primary-blue;
@@ -18,13 +19,13 @@ img {
 }
 
 .main-image {
-	grid-area: image;	
+	grid-area: image;
 }
 
 .grid-main-area {
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
-	grid-template-areas: 
+	grid-template-areas:
 		"title title title title title title title title title"
 		"image image image image image image image image image";
 }
@@ -43,7 +44,7 @@ img {
 	.grid-main-area {
 		display: grid;
 		grid-template-columns: repeat(9, 1fr);
-		grid-template-areas: 
+		grid-template-areas:
 			"title title title image image image image image image";
 	}
 }
