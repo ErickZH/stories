@@ -17,18 +17,7 @@ figure {
 	max-height: 100%;
 	margin: 0px;
 	figcaption {
-		padding: $large-padding;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 2em;
-		position: absolute;
-		letter-spacing: 5px;
-		width: auto;
-		bottom: 0px;
-		left: 10px;
-		z-index: 10px;
-		@include text-center;
-		color: rgba($grey, 0.5);
+		@include caption;
 	}
 }
 
@@ -101,6 +90,23 @@ figure {
 	&.parallax {
 		background-attachment: fixed;
 		background-image: url(/../public/images/1.jpg);
+		position: relative;
+		p {
+			@include caption;
+			background-color: rgba($blue, 0.8);
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			left:0px;
+			@include text-right;
+
+			span {
+				display: block;
+				font-size: 0.5em;
+				font-weight: 200;
+				margin-top: 6px;
+			}
+		}
 	}
 }
 
