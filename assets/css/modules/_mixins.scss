@@ -38,3 +38,15 @@
     @include text-center;
     color: rgba($grey, 0.5);
 }
+
+@mixin main-text {
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    h1 {
+        font-weight: inherit;
+        font-size: $big;
+        letter-spacing: 0.3em;
+        line-height: 1.5em;
+    }
+}
