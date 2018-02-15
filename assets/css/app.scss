@@ -89,8 +89,8 @@ figure {
 
 	&.parallax {
 		background-attachment: fixed;
-		background-image: url(/../public/images/1.jpg);
-		position: relative;
+		background-image: url(/../public/images/4.jpg);
+		//position: relative;
 		p {
 			@include caption;
 			background-color: rgba($blue, 0.8);
