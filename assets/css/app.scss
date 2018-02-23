@@ -111,6 +111,7 @@ figure {
 		text-align: right;
 		margin-bottom: 10px;
 		padding-right: 2em;
+		display: none;
 		.right-arrow, .left-arrow {
 			height: 50px;
 			@include transition;
