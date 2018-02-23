@@ -107,6 +107,25 @@ figure {
 }
 
 .slider {
+	.controls {
+		text-align: right;
+		margin-bottom: 10px;
+		padding-right: 2em;
+		.right-arrow, .left-arrow {
+			height: 50px;
+			@include transition;
+			transition-duration: 0.15s;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.2;
+			}
+		}
+		.left-arrow {
+			margin-left: 1.5em;
+			transform: rotate(180deg);
+		}
+	}
+
 	.image {
 		min-height: 100vh;
 		display: flex;
@@ -142,6 +161,7 @@ figure {
 		}
 	}
 }
+
 
 #slider-text-content {
 	@include transition;
