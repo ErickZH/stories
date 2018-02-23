@@ -1,3 +1,5 @@
+import styles = from './maps/style';
+
 function initMap() 
 {
 	const coords = {
