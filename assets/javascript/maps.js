@@ -1,4 +1,4 @@
-import styles = from './maps/style';
+//import styles = from './maps/style';
 
 function initMap() 
 {
