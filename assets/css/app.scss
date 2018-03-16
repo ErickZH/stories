@@ -86,6 +86,17 @@ figure {
 	@include transition;
 	@include center-vertical-horizontal;
 
+	.close {
+		position: absolute;
+		top: 2em;
+		right: 2em;
+
+		img {
+			height: 45px;
+			cursor: pointer;
+		}
+	}
+
 	&.active {
 		top: 0;
 	}
