@@ -21,6 +21,12 @@ module.exports = merge(common, {
                         {loader: 'sass-loader'}
                     ]
                 })
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {loader: 'html-loader', options: {minimize: true, attrs: false}}
+                ]
             }
 		]
 	},
